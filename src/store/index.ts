@@ -1,12 +1,11 @@
-import { configureStore, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 import { TypedUseSelectorHook, useSelector } from 'react-redux';
 
-interface AddTodoPayload {
-    newTodo: string;
-}
+import { player } from './slices/player';
 
 export const store = configureStore({
     reducer: {
+        player
     }
 })
 
